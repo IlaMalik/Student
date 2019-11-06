@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD//EN"
+  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+  
+  <hibernate-mapping package="com.lti.Hibernate_example.Student">
+  <class name="StudentNew" table="student">
+ 	 <id name="student_id" column="student_id">
+  		<generator class="sequence">
+  		<param name="sequence">hibernate_studseq</param>
+  		</generator>
+  	</id>
+  	<property name="student_name" column="student_name"/>
+  	<property name="course_id" column="course_id"/>
+  	<property name="college_name" column="college_name"/>
+ 
+  	</class>
+  </hibernate-mapping>
